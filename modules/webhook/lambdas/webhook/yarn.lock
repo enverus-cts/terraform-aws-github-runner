@@ -1406,10 +1406,10 @@
     slash "^3.0.0"
     write-file-atomic "^4.0.1"
 
-"@jest/types@^29.2.0":
-  version "29.2.0"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-29.2.0.tgz#c0d1ef8bc1e4f4b358e7877e34157371e7881b0b"
-  integrity sha512-mfgpQz4Z2xGo37m6KD8xEpKelaVzvYVRijmLPePn9pxgaPEtX+SqIyPNzzoeCPXKYbB4L/wYSgXDL8o3Gop78Q==
+"@jest/types@^29.2.0", "@jest/types@^29.3.1":
+  version "29.3.1"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-29.3.1.tgz#7c5a80777cb13e703aeec6788d044150341147e3"
+  integrity sha512-d0S0jmmTpjnhCmNpApgX3jrUZgZ22ivKJRvL2lli5hpCRoNnp1f85r2/wpKfXuYu8E7Jjh1hGfhPyup1NM5AmA==
   dependencies:
     "@jest/schemas" "^29.0.0"
     "@types/istanbul-lib-coverage" "^2.0.0"
@@ -3758,14 +3758,14 @@ jest-message-util@^29.2.0:
     slash "^3.0.0"
     stack-utils "^2.0.3"
 
-jest-mock@^29.2.0:
-  version "29.2.0"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.2.0.tgz#3531012881178f59f4b5fd1e243acc329d08d6a1"
-  integrity sha512-aiWGR0P8ivssIO17xkehLGFtCcef2ZwQFNPwEer1jQLHxPctDlIg3Hs6QMq1KpPz5dkCcgM7mwGif4a9IPznlg==
+jest-mock@^29.2.0, jest-mock@^29.3.1:
+  version "29.3.1"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.3.1.tgz#60287d92e5010979d01f218c6b215b688e0f313e"
+  integrity sha512-H8/qFDtDVMFvFP4X8NuOT3XRDzOUTz+FeACjufHzsOIBAxivLqkB1PoLCaJx9iPPQ8dZThHPp/G3WRWyMgA3JA==
   dependencies:
-    "@jest/types" "^29.2.0"
+    "@jest/types" "^29.3.1"
     "@types/node" "*"
-    jest-util "^29.2.0"
+    jest-util "^29.3.1"
 
 jest-pnp-resolver@^1.2.2:
   version "1.2.2"
@@ -3885,12 +3885,12 @@ jest-snapshot@^29.2.0:
     pretty-format "^29.2.0"
     semver "^7.3.5"
 
-jest-util@^29.0.0, jest-util@^29.2.0:
-  version "29.2.0"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.2.0.tgz#797935697e83a5722aeba401ed6cd01264295566"
-  integrity sha512-8M1dx12ujkBbnhwytrezWY0Ut79hbflwodE+qZKjxSRz5qt4xDp6dQQJaOCFvCmE0QJqp9KyEK33lpPNjnhevw==
+jest-util@^29.0.0, jest-util@^29.2.0, jest-util@^29.3.1:
+  version "29.3.1"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.3.1.tgz#1dda51e378bbcb7e3bc9d8ab651445591ed373e1"
+  integrity sha512-7YOVZaiX7RJLv76ZfHt4nbNEzzTRiMW/IiOG7ZOKmTXmoGBxUDefgMAxQubu6WPVqP5zSzAdZG0FfLcC7HOIFQ==
   dependencies:
-    "@jest/types" "^29.2.0"
+    "@jest/types" "^29.3.1"
     "@types/node" "*"
     chalk "^4.0.0"
     ci-info "^3.2.0"
