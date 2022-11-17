@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.15.0](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.14.0...v1.15.0) (2022-11-17)
+
+
+### Features
+
+* **observability:** adds a monitor for watching GH action jobs ([4eab453](https://github.com/enverus-cts/terraform-aws-github-runner/commit/4eab45305c91bbbfc2718126e5cd5d95ea1a20bc))
+* **observability:** adds a monitor for watching GH action jobs ([fcaf44a](https://github.com/enverus-cts/terraform-aws-github-runner/commit/fcaf44ac9094816b2172063627fddc8b7939e7be))
+* **observability:** adds pending job timeout ([9ab46fc](https://github.com/enverus-cts/terraform-aws-github-runner/commit/9ab46fc29b0b0917b98c992e0dc6e93eec60d64f))
+* **observability:** adds support for monitoring lambda ([19498f1](https://github.com/enverus-cts/terraform-aws-github-runner/commit/19498f116246f9bf22aec6c6ebcb836f1a800095))
+
 ## [1.14.0](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.13.0...v1.14.0) (2022-11-02)
 
 
