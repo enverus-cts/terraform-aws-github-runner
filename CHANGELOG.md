@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.1](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.15.0...v1.15.1) (2022-11-30)
+
+
+### Bug Fixes
+
+* **observability:** eventbridge rule target limit issue ([ecd8d13](https://github.com/enverus-cts/terraform-aws-github-runner/commit/ecd8d13ad48555f6052dbc7fac0327f5c0ad67ca))
+
 ## [1.15.0](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.14.0...v1.15.0) (2022-11-17)
 
 
