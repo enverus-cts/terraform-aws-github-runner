@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.15.1...v1.16.0) (2023-07-05)
+
+
+### Features
+
+* **SRE-11680:** bump providers and tflint ([#592](https://github.com/enverus-cts/terraform-aws-github-runner/issues/592)) ([2d367a4](https://github.com/enverus-cts/terraform-aws-github-runner/commit/2d367a4bb423a0d45250f794b884a5f7a6aa6054))
+
 ## [1.15.1](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.15.0...v1.15.1) (2022-11-30)
 
 
