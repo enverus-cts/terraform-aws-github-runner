@@ -1,11 +1,28 @@
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        args: ["--markdown-linebreak-ext=md"]
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: detect-aws-credentials
+        args: ["--allow-missing-credentials"]
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.52.0
+    rev: v1.77.1
     hooks:
       - id: terraform_fmt
-      - id: terraform_tflint
       - id: terraform_docs
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
-    hooks:
-      - id: check-merge-conflict
+        args:
+          - "--args=--lockfile=false"
+      - id: terraform_validate
+        exclude: deploy
+      - id: terraform_tflint
+        args:
+          - "--args=--only=terraform_deprecated_interpolation"
+          - "--args=--only=terraform_deprecated_index"
+          - "--args=--only=terraform_unused_declarations"
+          - "--args=--only=terraform_comment_syntax"
+          - "--args=--only=terraform_typed_variables"
+          - "--args=--disable-rule=terraform_module_pinned_source"
