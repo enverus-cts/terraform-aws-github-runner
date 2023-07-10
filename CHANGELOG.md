@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.16.0...v1.16.1) (2023-07-10)
+
+
+### Bug Fixes
+
+* **SRE-11680:** downgrade aws provider to 4.41 ([#603](https://github.com/enverus-cts/terraform-aws-github-runner/issues/603)) ([41ef189](https://github.com/enverus-cts/terraform-aws-github-runner/commit/41ef1894c0c5db4f6cf7831e8150b9d2d6c9c25c))
+
 ## [1.16.0](https://github.com/enverus-cts/terraform-aws-github-runner/compare/v1.15.1...v1.16.0) (2023-07-05)
 
 
