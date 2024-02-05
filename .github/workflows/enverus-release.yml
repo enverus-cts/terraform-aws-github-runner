@@ -57,7 +57,7 @@ jobs:
           path: artifacts
 
       - name: Get token
-        uses: philips-software/app-token-action@v1.1.2
+        uses: philips-software/app-token-action@v2.0.0
         id: app-token
         with:
           app_id: ${{ secrets.RELEASER_APP_ID }}
