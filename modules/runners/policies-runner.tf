@@ -63,4 +63,59 @@ resource "aws_iam_role_policy" "ec2" {
   policy = templatefile("${path.module}/policies/instance-ec2.json", {})
 }
 
+data "aws_iam_policy_document" "helix_agent_policy" {
+  statement {
+    effect = "Allow"
+    actions = [
+      "s3:GetObjectAcl",
+      "s3:GetObject",
+      "s3:GetObjectRetention",
+      "s3:GetObjectVersionTagging",
+      "s3:ListBucketVersions",
+      "s3:GetObjectAttributes",
+      "s3:GetObjectVersionAcl",
+      "s3:GetObjectTagging",
+      "s3:ListBucket",
+      "s3:GetObjectVersionForReplication",
+      "s3:GetObjectVersionAttributes",
+      "s3:GetObjectVersion"
+    ]
+    resources = [
+      "arn:aws:s3:::enverus-security-shared-files/*",
+      "arn:aws:s3:::enverus-security-shared-files"
+    ]
+  }
+  statement {
+    effect = "Allow"
+    actions = [
+      "s3:ListAllMyBuckets"
+    ]
+    resources = ["*"]
+  }
+
+  statement {
+    effect = "Allow"
+    actions = [
+      "kms:Decrypt"
+    ]
+    resources = ["*"]
+  }
+}
+
+resource "aws_iam_policy" "helix_agent_policy" {
+  name_prefix = "Helix-Agent-policy"
+  description = "IAM Policy to allow installation of Helix-Agent securiy"
+  policy      = data.aws_iam_policy_document.helix_agent_policy.json
+}
+
+resource "aws_iam_role_policy_attachment" "helix_agent_attachment" {
+  role       = aws_iam_role.runner.name
+  policy_arn = aws_iam_policy.helix_agent_policy.arn
+}
+
+resource "aws_iam_role_policy_attachment" "ssm" {
+  role       = aws_iam_role.runner.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+}
+
 // see also logging.tf for logging and metrics policies
