@@ -18,7 +18,7 @@
       "Resource": [
         "${arn_ssm_parameters_prefix}",
         "${arn_ssm_parameters_path}"
-      ]      
+      ]
     }
   ]
 }

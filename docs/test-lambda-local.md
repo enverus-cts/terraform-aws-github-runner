@@ -23,7 +23,7 @@ Add the code below to your Terraform deployment to allow your principal to use t
 data "aws_caller_identity" "current" {}
 
 module "runners" {
-  
+
   ...
 
   # Assume you have a profile with Admin privileges, allow you to switch to the Lambda role
